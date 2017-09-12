@@ -71,3 +71,23 @@
 # print(10%3)
 # 1
 # #
+
+# #
+# 练习：输出下列字符
+# n = 123
+# f = 456.789
+# s1 = 'Hello, world'
+# s2 = 'Hello, \'Adam\''
+# s3 = r'Hello, "Bart"'
+# s4 = r'''Hello,
+# Lisa!'''
+# #
+# print('n = 123 \nf = 456.789 \ns1 = \'Hello, world\' \ns2 = \'Hello, \\\'Adam\\\'\' \ns3 = r\'Hello, \"Bart\"\' \ns4 = r\'\'\'Hello, \nLisa!\'\'\'')
+# 用 '''   ''' 改进一下
+print('''n = 123 
+f = 456.789 
+s1 = \'Hello, world\' 
+s2 = \'Hello, \\\'Adam\\\'\' 
+s3 = r\'Hello, \"Bart\"\' 
+s4 = r\'\'\'Hello, 
+Lisa!\'\'\'''')
