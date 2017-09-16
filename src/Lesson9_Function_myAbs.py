@@ -6,7 +6,7 @@
 
 # 带有类型检查
 def myAbs(x) :
-    if not isinstance(x,(int,float)):
+    if not isinstance(x,(int,float)) :
         raise TypeError('bad operand type')
     if x <= 0:
         return -x
