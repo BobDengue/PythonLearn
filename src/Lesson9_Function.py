@@ -143,3 +143,25 @@
 # >>> newdict = {'Math':100,'Phisics':100}
 # >>> Score('deng',**newdict)
 # name= deng score= {'Phisics': 100, 'Math': 100}
+
+# #
+# 递归
+# recursion
+# 在一个函数的内部调用函数本身，就是递归函数
+# 优点：逻辑清晰（所有的递归可以写成循环，但是循环的逻辑不如递归）
+# 缺点：可能堆栈溢出
+# 以 累乘 为例
+# #
+
+# >>> def fact(x):
+# 	while x==1 :
+# 		return 1
+# 	return x*fact(x-1)
+
+# >>> fact(10)
+# 3628800
+
+# #
+# 联系：请编写move(n, a, b, c)函数，它接收参数n，表示3个柱子A、B、C中第1个柱子A的盘子数量，然后打印出把所有盘子从A借助B移动到C的方法，例如：
+from Lesson9_Function_Hanoi import Hanoi
+Hanoi(3)
