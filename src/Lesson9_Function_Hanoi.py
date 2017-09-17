@@ -10,6 +10,7 @@
 # [    ]                 | n      
 # A         B        C
 # transfer disc on rod A to rod C by rod B
+
 def Hanoi(n,a='A',b='B',c='C'):
     if n==1 :
         print('move',a,'-->',c)
