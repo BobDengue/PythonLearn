@@ -73,3 +73,73 @@
 # c = float( input('Input c : '))
 # root = solutionToEquation(a,b,c)
 # print(root)
+
+# #
+# 函数的参数
+# #
+
+# #
+# 位置参数
+# 如前面使用的
+# solutionToEquation(a,b,c)
+# 其中 a,b,c 都是位置参数
+# 因为参数的使用和确定是根据位置一一对应
+# #
+
+# #
+# 默认参数
+# 默认参数的意思是，该参数可以省略，省略时用默认值
+# 也可以对 默认参数 幅值，这个参数会覆盖 默认参数
+# 下面用 power 乘方函数来展示默认参数
+# 默认参数要用不可变对象
+# #
+
+# def myPower(x,n=2) :
+#     powerResult = 1
+#     while n > 0 :
+#         powerResult *= x 
+#         n = n - 1
+#     return powerResult
+
+# power1 = myPower(2)
+# power2 = myPower(2,10)
+# print( power1,'\n',power2)
+
+# #
+# 可变参数（个数）
+# 格式：多了一个 * 星号
+# 这样会把输入组成一个 tuple
+# 这样就可以直接输入多个值，或者直接输入 List 和 Tuple
+# def functionName(*variable)
+#     funtion_pass
+# 以累加程序为例
+# #
+
+# def mySum(*num) :
+#     sum = 0
+#     for x in num :
+#         sum += x
+#     return sum
+# >>> mySum(1,2,3)
+# 6
+# >>> mySum(*range(50))
+# 1225
+
+# #
+# 关键字参数
+# 可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple
+# 关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict
+# 也就是说 关键字参数 可以传入一个 dict
+# 定义： （多了 ** 两个星号）
+# def functionName(variable1,**dictExample) :
+#     function_pass
+# 以成绩统计程序为例
+# #
+
+# >>> Score('Deng')
+# name= Deng score= {}
+# >>> Score('Deng',Math=100)
+# name= Deng score= {'Math': 100}
+# >>> newdict = {'Math':100,'Phisics':100}
+# >>> Score('deng',**newdict)
+# name= deng score= {'Phisics': 100, 'Math': 100}
