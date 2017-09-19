@@ -14,3 +14,6 @@ def Triangles() :
         yield L
         L.append(0)
         L=[ L[i-1] + L[i] for i in range(len(L))]
+
+# L[-1] = 0 
+# 因为每次 append(0) 
